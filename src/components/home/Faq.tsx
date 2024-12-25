@@ -53,13 +53,17 @@ const FAQ = () => {
                                        {item.question}
                                     </button>
                                  </h2>
-                                 {item.showAnswer && (
-                                    <div id="collapseOne" className="accordion-collapse collapse show">
-                                       <div className="accordion-body">
-                                          <p>{item.answer}</p>
-                                       </div>
+                                 <div className={`accordion-collapse ${item.showAnswer ? "show" : ""}`}
+                                      style={{
+                                         transition: 'height 0.8s ease-in-out, opacity 0.8s ease-in-out',
+                                         height: item.showAnswer ? 'auto' : '0',
+                                         opacity: item.showAnswer ? 1 : 0,
+                                         overflow: 'hidden'
+                                      }}>
+                                    <div className="accordion-body">
+                                       <p>{item.answer}</p>
                                     </div>
-                                 )}
+                                 </div>
                               </div>
                            ))}
                         </div>
