@@ -75,7 +75,7 @@ const FeatureOne = () => {
             >
                <div className="col-lg-10">
                   <div className="section-title text-center mb-70">
-                     <h2 className="title">Revolutionary ICO Platform with Exclusive Rewards Program</h2>
+                     <h2 className="title">Dynamic Investment Hub with Diverse Global Opportunities</h2>
                   </div>
                </div>
             </div>
