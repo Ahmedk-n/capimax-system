@@ -72,7 +72,7 @@ const Team = () => {
             <div className="row g-0">
                <div className="col-12">
                   <div className="section-title text-center mb-50">
-                     <h2 className="title">Meet the Brick Veneers</h2>
+                     <h2 className="title">Our International Licenses</h2>
                   </div>
                </div>
             </div>

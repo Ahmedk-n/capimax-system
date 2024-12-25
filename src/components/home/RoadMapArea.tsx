@@ -11,33 +11,39 @@ interface DataTyfe {
 const roadmap_data: DataTyfe[] = [
    {
       id: 1,
-      roadmap_title: "End of Q4 2023",
-      title: "Research",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "Easy Investment Access",
+      title: "Quick Investment",
+      desc: (<>Investing with Capimax is easy and fast through the website or app, offering a smooth, no-hassle process for investors.</>),
    },
    {
       id: 2,
-      roadmap_title: "App Beta Test",
-      title: "Research",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "High Returns",
+      title: "Attractive Profits",
+      desc: (<>Capimax offers high returns, giving investors excellent profit opportunities with minimal effort required all things we will cover.</>),
    },
    {
       id: 3,
-      roadmap_title: "End of Q4 2023",
-      title: "Token Test",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "Security and Insurance",
+      title: "Guaranteed Security",
+      desc: (<>Your investment is secured with insurance, ensuring the protection of both the principal amount and profits according to your plan.</>),
    },
    {
       id: 4,
-      roadmap_title: "End of Q4 2023",
-      title: "Alpha Test",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "No Hidden Fees",
+      title: "No Extra Charges",
+      desc: (<>Investing with Capimax comes with no subscription fees, no hidden charges, and no monthly expenses—clear and transparent.</>),
    },
    {
       id: 5,
-      roadmap_title: "End of Q4 2023",
-      title: "Concept",
-      desc: (<>SubQuery Builders/Grants Program SQT Network contract internal MVP Coordinator and client SDK implementations</>),
+      roadmap_title: "Flexible Returns",
+      title: "Flexible Payouts",
+      desc: (<>Choose from monthly, quarterly, or semi-annual payouts, offering you flexible options to suit your financial goals.</>),
+   },
+   {
+      id: 6,
+      roadmap_title: "Quick Withdrawals",
+      title: "Fast Fund Withdrawal",
+      desc: (<>With Capimax, you can easily withdraw your funds quickly, providing you fast access to your earnings whenever needed.</>),
    },
 ]
 
@@ -108,7 +114,7 @@ const RoadMapArea = () => {
             <div className="row g-0">
                <div className="col-lg-12">
                   <div className="section-title text-center mb-70">
-                     <h2 className="title">Our Roadmap</h2>
+                     <h2 className="title">Investment Benefits & Guarantees with Capimax</h2>
                   </div>
                </div>
             </div>

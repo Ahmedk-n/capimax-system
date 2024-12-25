@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 import chartImg from "@/assets/img/images/chart_img.png"
 
-const tab_title: string[] = ["Funding Allocation", "Token Distribution",];
-const chart_List_1: string[] = ["Contingency: 70%", "Business Development: 20%", "Investor: 30%", "Poland: 15%", "Legal & Regulation: 20%", "Czech Republic: 50%"]
-const chart_List_2: string[] = ["Czech Republic: 50%", "Poland: 15%", "Legal & Regulation: 20%", "Contingency: 70%", "Business Development: 20%", "Investor: 30%"]
-
+const tab_title: string[] = ["Our Presence", "Extra information",];
+const chart_List_1: string[] = ["Primary Companies: 3 (USA, UK, UAE)", "Countries of Presence: 7 countries", "Countries of Investors: 18 countries", "Marketing Offices: 14 countries", "Marketing Clients: 12 countries", "Global Reach: 18 countries"]
+const chart_List_2: string[] = ["Group Ownership: 100% of Capimax Companies", "Subsidiary Companies: 4 (Capimax General Trading USA, Capimax Developments UK, Capimax Financial Management UK, etc.)", "Affiliate Companies: 6 around the world", "Corporate Investors: 117 companies", "Individual Investors: 6,512 individuals", "Countries Served by Subsidiaries: 7"]
+// Countries of Presence: 7 countries , Countries of Investor Interaction: 18 countries , Marketing Offices: 14 countries , Marketing Clients: 12 countries , Global Reach: 18 countries , 
 const ChartArea = () => {
 
    const [activeTab, setActiveTab] = useState(0);
@@ -21,8 +21,8 @@ const ChartArea = () => {
 
 
    const chartData = [
-      [70, 20, 30, 15, 20, 50], // Funding Allocation percentages
-      [50, 15, 20, 70, 20, 30]  // Token Distribution percentages
+      [4.17, 9.72, 25, 19.44, 16.67, 25], // Funding Allocation percentages
+      [100, 5.56, 8.33, 162.5, 9044, 9.72]  // Token Distribution percentages
    ];
 
    const data = {
@@ -80,11 +80,11 @@ const ChartArea = () => {
                   <div className="col-lg-6">
                      <div className="right-side-content">
                         <Image src={chartImg} alt="" />
-                        <p>Ethereum is a decentralized, open-source <br /> blockchain with smart contract</p>
+                        <p>Capimax offers risk-free, insured investments with <br /> guaranteed returns and global market access.</p>
                         <ul className="list-wrap">
-                           <li><span>1</span>Symbol: CIC</li>
-                           <li><span>2</span>Initial Value : 1 ETH = 3177.38 CIC</li>
-                           <li><span>3</span>Type : ERC20</li>
+                           <li><span>1</span>Global Expertise: Invest with top financial experts.</li>
+                           <li><span>2</span>Worldwide Coverage: Insurance protecting principal and profits.</li>
+                           <li><span>3</span>High Returns: Secure and profitable investment opportunities.</li>
                         </ul>
                      </div>
                   </div>
