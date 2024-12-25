@@ -129,10 +129,7 @@ const FAQ = () => {
                                     </button>
                                  </h2>
                                  {item.showAnswer && (
-                                    <div
-                                       id="collapseOne"
-                                       className="accordion-collapse collapse show"
-                                    >
+                                    <div id="collapseOne" className="accordion-collapse collapse show">
                                        <div className="accordion-body">
                                           <p>{item.answer}</p>
                                        </div>
