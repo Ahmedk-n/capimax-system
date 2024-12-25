@@ -15,9 +15,9 @@ const Contribution = () => {
                   </div>
                   <div className="progress-wrap">
                      <ul className="list-wrap">
-                        <li>general trading</li>
-                        <li>developments</li>
-                        <li>Management</li>
+                        <li>register</li>
+                        <li>invest</li>
+                        <li>get cash</li>
                      </ul>
                      <div className="progress" role="progressbar">
                         <div className="progress-bar" style={{ width: "83%" }}></div>
