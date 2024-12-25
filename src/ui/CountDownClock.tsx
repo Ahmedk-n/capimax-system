@@ -1,37 +1,28 @@
 import React from 'react';
-import { useTimer } from 'react-timer-hook';
 
-const CountdownClock=()=> {
-  // Set the expiration timestamp based on the current time plus the desired duration
-  const time = new Date();
-  time.setDate(time.getDate() + 302); // 302 days
-  time.setHours(time.getHours() + 2); // 2 hours
-  time.setMinutes(time.getMinutes() + 59); // 59 minutes
-  time.setSeconds(time.getSeconds() + 59); // 59 seconds
-
-  const {
-    seconds,
-    minutes,
-    hours,
-    days,
-  } = useTimer({ expiryTimestamp: time, onExpire: () => console.warn('onExpire called') });
+const Flags = () => {
+  const flagData = [
+    { name: 'CapiMax USA', code: 'us', regNumber: '' },
+    { name: 'CapiMax UKE', code: 'gb', regNumber: '' },
+    { name: 'CapiMax UAE', code: 'ae', regNumber: '' },
+  ];
 
   return (
-    <>
-      <div className="time-count day">
-        <span>{days}</span>days
-      </div>
-      <div className="time-count hour">
-        <span>{hours}</span>hours
-      </div>
-      <div className="time-count min">
-        <span>{minutes}</span>mins
-      </div>
-      <div className="time-count sec">
-        <span>{seconds}</span>secs
-      </div>
-    </>
+    <div className="flag-container">
+      {flagData.map((flag, index) => (
+        <div className="flag-card" key={index}>
+          {/* Auto-fetching the flags using a CDN */}
+          <img
+            src={`https://flagcdn.com/w80/${flag.code}.png`}
+            alt={`${flag.name} flag`}
+            className="flag-image"
+          />
+          <h3 className="flag-name">{flag.name}</h3>
+          <p className="registration-number">{flag.regNumber}</p>
+        </div>
+      ))}
+    </div>
   );
-}
+};
 
-export default CountdownClock;
+export default Flags;

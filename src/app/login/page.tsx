@@ -2,7 +2,7 @@ import Login from "@/components/login";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Login Xeco - ICO & Crypto Landing Page React Next js Template",
+   title: "Login CapiMax - Investments  ",
 };
 const index = () => {
    return (

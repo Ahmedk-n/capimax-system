@@ -63,7 +63,7 @@ const Footer = () => {
                         <div className="footer-widget">
                            <h4 className="fw-title">Subscribe Newsletter</h4>
                            <div className="footer-newsletter">
-                              <p>Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo</p>
+                              <p>Stay ahead with the latest investment opportunities tailored to your financial goals</p>
                               <NewsletterForm/>
                            </div>
                         </div>
@@ -75,7 +75,7 @@ const Footer = () => {
                   <div className="row">
                      <div className="col-lg-12">
                         <div className="copyright-text">
-                           <p>Copyright © 2023 XECO. All rights reserved.</p>
+                           <p>Copyright © 2025 CapiMax Investments. All rights reserved.</p>
                         </div>
                      </div>
                   </div>

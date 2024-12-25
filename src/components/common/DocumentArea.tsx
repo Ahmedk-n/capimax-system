@@ -4,7 +4,7 @@ import Image from "next/image"
 
 import docShape from "@/assets/img/images/document_shape.png"
 
-const doc_data: string[] = ["Whitepaper", "Token Sale Terms", "Presentation", "Lightpaper"]
+const doc_data: string[] = ["Policy", "Terms", "Opportunities", "Investments"]
 
 const DocumentArea = () => {
    return (
