@@ -4,7 +4,7 @@ import blog_data from "@/data/BlogData";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Blog Details Xeco - ICO & Crypto Landing Page React Next js Template",
+   title: "Blog Details CapiMax - Investments  ",
 };
 const index = ({ params }: { params: { id: number } }) => {
 
