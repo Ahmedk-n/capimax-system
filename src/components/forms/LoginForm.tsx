@@ -42,7 +42,7 @@ const LoginForm = ({ style }: any) => {
             <div className="eg-login__input-box">
                <div className="eg-login__input">
                   <label htmlFor="email">Your Email</label>
-                  <input id="email" {...register("email")} type="email" placeholder="xeco@mail.com" />
+                  <input id="email" {...register("email")} type="email" placeholder="@mail.com" />
                   <p className="form_error">{errors.email?.message}</p>
                </div>
             </div>

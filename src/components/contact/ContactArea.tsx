@@ -25,7 +25,7 @@ const contact_data: DataType[] = [
       id: 3,
       icon: "fas fa-envelope",
       title: "Email",
-      info: (<><Link href="mailto:xeco.@example.com">sara.cruz@example.com</Link> <br /> <Link href="mailto:xeco.@example.com">xeco.@example.com</Link></>),
+      info: (<><Link href="mailto:.@example.com">sara.cruz@example.com</Link> <br /> <Link href="mailto:.@example.com">.@example.com</Link></>),
    },
    {
       id: 4,
