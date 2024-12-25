@@ -42,7 +42,7 @@ const Team = () => {
                   </p>
                   <div className="learn-more-btn">
                     <Link href="https://www.example.com" className="btn">
-                      Verfy Licens
+                      Verfy License
                     </Link>
                   </div>
                 </div>
