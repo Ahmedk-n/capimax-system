@@ -1501,49 +1501,49 @@ label {
 
 /* Global container for all flag cards */
 .flag-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 30px;
-  }
-  
-  /* Individual flag cards */
-  .flag-card {
-    background: linear-gradient(145deg, #0f2d1b, #133225);
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Hover animation */
-  .flag-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0, 255, 0, 0.5);
-  }
-  
-  /* Flag images */
-  .flag-image {
-    width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  /* Country name */
-  .flag-name {
-    font-size: 18px;
-    margin: 5px 0;
-  }
-  
-  /* Registration number styling */
-  .registration-number {
-    font-size: 12px;
-    color: #b4b4b4;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Individual flag cards */
+.flag-card {
+  background: linear-gradient(145deg, #0f2d1b, #133225);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.flag-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 255, 0, 0.5);
+}
+
+/* Flag images */
+.flag-image {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Country name */
+.flag-name {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Registration number styling */
+.registration-number {
+  font-size: 12px;
+  color: #b4b4b4;
+}
 
 /*=============================
 	10. Chart

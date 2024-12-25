@@ -1,9 +1,10 @@
-"use client"
-import Image, { StaticImageData } from "next/image"
+"use client"; // Add this line at the top of your file
+
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import featureImg_1 from "@/assets/img/images/features_img01.png";
+import featureImg_1 from "@/assets/img/images/features_img01.png"; // Example image
 import featureImg_2 from "@/assets/img/images/features_img02.png";
 import featureImg_3 from "@/assets/img/images/features_img03.png";
 import featureImg_4 from "@/assets/img/images/features_img04.png";
@@ -14,32 +15,82 @@ interface DataType {
    desc: JSX.Element;
    img: StaticImageData;
 }
+
 const feature_data: DataType[] = [
    {
       id: 1,
-      title: (<>Mobile Payment Make Easy</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>Commercial Investment</>),
+      desc: (<>Explore opportunities in commercial investments with global returns.</>),
       img: featureImg_1,
    },
    {
       id: 2,
-      title: (<>Lifetime Free Transaction</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>Silver Investment</>),
+      desc: (<>Invest in silver, a commodity with significant potential for growth.</>),
       img: featureImg_2,
    },
    {
       id: 3,
-      title: (<>Protect the <br /> Identity</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
+      title: (<>Gold Investment</>),
+      desc: (<>Secure your wealth by investing in gold, a timeless asset.</>),
       img: featureImg_3,
    },
    {
       id: 4,
-      title: (<>Security & Control Over Money</>),
-      desc: (<>Add new, trending and rare artwork to your collection.</>),
-      img: featureImg_4
+      title: (<>Real Estate Investment</>),
+      desc: (<>Unlock the benefits of real estate investments in prime locations.</>),
+      img: featureImg_4,
    },
-]
+   {
+      id: 5,
+      title: (<>Acquisitions</>),
+      desc: (<>Engage in strategic acquisitions for market expansion and growth.</>),
+      img: featureImg_1,
+   },
+   {
+      id: 6,
+      title: (<>Deals</>),
+      desc: (<>Participate in lucrative deals across industries and sectors.</>),
+      img: featureImg_2,
+   },
+   {
+      id: 7,
+      title: (<>Stock, Bonds, and Treasury Bills Investment</>),
+      desc: (<>Diversify your portfolio with investments in stocks, and bonds..</>),
+      img: featureImg_3,
+   },
+   {
+      id: 8,
+      title: (<>Metal Investment</>),
+      desc: (<>Invest in valuable metals like platinum, copper, and more.</>),
+      img: featureImg_4,
+   },
+   {
+      id: 9,
+      title: (<>Agricultural Investment</>),
+      desc: (<>Explore the growing potential of agricultural investments.</>),
+      img: featureImg_1,
+   },
+   {
+      id: 10,
+      title: (<>Tourism and Entertainment Investment</>),
+      desc: (<>Invest in the booming tourism and entertainment sectors.</>),
+      img: featureImg_2,
+   },
+   {
+      id: 11,
+      title: (<>Joint Investments</>),
+      desc: (<>Partner in joint investments for diversified and shared growth.</>),
+      img: featureImg_3,
+   },
+   {
+      id: 12,
+      title: (<>Technology and Fintech Investment</>),
+      desc: (<>Capitalize on the rapidly growing technology and fintech sectors.</>),
+      img: featureImg_4,
+   },
+];
+
 const FeatureOne = () => {
    const [isActive, setIsActive] = useState(false);
 
@@ -118,7 +169,7 @@ const FeatureOne = () => {
             </div>
          </div>
       </section>
-   )
-}
+   );
+};
 
-export default FeatureOne
+export default FeatureOne;
