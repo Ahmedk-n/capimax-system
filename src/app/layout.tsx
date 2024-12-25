@@ -17,6 +17,7 @@ const heading = Plus_Jakarta_Sans({
   variable: '--tg-heading-font-family',
 });
 
+
 export default function RootLayout({
   children,
 }: {
