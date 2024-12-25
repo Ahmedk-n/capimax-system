@@ -62,7 +62,7 @@ const Brand = () => {
             <div className="row g-0">
                <div className="col-lg-12">
                   <div className="brand-title text-center">
-                     <h6 className="title">Our top Partner</h6>
+                     <h6 className="title">Our top Groups</h6>
                   </div>
                </div>
             </div>

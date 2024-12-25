@@ -25,8 +25,8 @@ const Contribution = () => {
                      <h6 className="progress-title"> 65 target raised <span>1 ETH = $1000 = 3177.38 CIC</span></h6>
                   </div>
                   <div className="contribution-btn">
-                     <Link href="/contact" className="btn">Purchase a Token</Link>
-                     <Link href="/contact" className="btn btn-two">Read White Paper</Link>
+                     <Link href="/contact" className="btn">Purchase a Deal</Link>
+                     <Link href="/contact" className="btn btn-two">Ask a Question</Link>
                   </div>
                </div>
             </div>
