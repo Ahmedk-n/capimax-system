@@ -17,6 +17,7 @@ import featureImg_10 from "@/assets/img/images/features_img02.png";
 import featureImg_11 from "@/assets/img/images/features_img03.png";
 import featureImg_12 from "@/assets/img/images/features_img04.png";
 
+
 interface DataType {
    id: number;
    title: JSX.Element;
