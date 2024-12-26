@@ -10,7 +10,7 @@ import blogThumb_1 from "@/assets/img/blog/blog_details.jpg";
 const BlogDetailsArea = () => {
    const router = useRouter();
    const params = useParams();
-   const id = Array.isArray(params.id) ? params.id[0] : params.id;
+   const id = params && Array.isArray(params.id) ? params.id[0] : params?.id;
    const single_blog = blog_data.find(blog => blog.id === parseInt(id || '0', 10));
 
    useEffect(() => {

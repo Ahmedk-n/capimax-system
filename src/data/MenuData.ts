@@ -20,31 +20,27 @@ const menu_data: MenuItem[] = [
     {
         id: 2,
         has_dropdown: false,
-        title: "Feature",
+        title: "Investement Plans",
         link: "/#feature",
     },
     {
         id: 3,
         has_dropdown: false,
-        title: "Ico Chart",
+        title: "Charts",
         link: "/#chart",
     },
     {
         id: 4,
         has_dropdown: false,
-        title: "RoadMap",
+        title: "Benefits",
         link: "/#roadMap",
     },
     {
         id: 5,
-        has_dropdown: true,
-        title: "Blog",
-        link: "/blog",
-        sub_menus: [
-            { link: "/blog", title: "Our Blog" },
-            { link: "/blog-details", title: "Blog-Details", },
-        ],
-    },
+        has_dropdown: false,
+        title: "Opportutnites",
+        link: "/oppotunities",
+   },
     {
         id: 6,
         has_dropdown: false,
