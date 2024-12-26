@@ -2,7 +2,7 @@ import Blog from "@/components/blogs/blog";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-  title: "Blog CapiMax - Investments  ",
+  title: "Opportunities CapiMax - Investments  ",
 };
 const index = () => {
   return (

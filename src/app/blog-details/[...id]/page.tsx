@@ -4,7 +4,7 @@ import blog_data from "@/data/BlogData";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Blog Details CapiMax - Investments  ",
+   title: "Details CapiMax - Investments  ",
 };
 const index = ({ params }: { params: { id: number } }) => {
 
