@@ -21,7 +21,7 @@ interface DataType {
 const feature_data: DataType[] = [
    {
       id: 1,
-      title: "Lifetime free and transaction",
+      title: "Effort-Free Insured Investments Globally",
       img: featuresImg_1
    },
    {
@@ -110,13 +110,15 @@ const FeatureTwo = () => {
                      transform: `translateY(${isActive ? '0px' : '20px'})`
                   }}
                >
+                   
+                   
                   <div className="col-lg-12">
                      <div className="section-title section-title-two text-center">
-                        <h2 className="title">The World&apos;s 1st ICO Platform That Offers Rewards
+                        <h2 className="title">Experience a Revolutionary Investment Platform
                            <Image src={featuresTitleImg_1} alt="" />
-                           is a groundbreaking platform that revolutionizes the way
+                           Offering Unmatched Security, Insurance, and Exceptional
                            <Image src={featuresTitleImg_2} alt="" />
-                           Initial Coin Offerings are conducted</h2>
+                           Returns for Global Investors Worldwide.</h2>
                      </div>
                   </div>
                </div>
