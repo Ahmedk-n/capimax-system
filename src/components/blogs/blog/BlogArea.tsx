@@ -55,7 +55,7 @@ const BlogArea = () => {
                      {currentItems.filter(item => item.post === "masonry").map((item) => (
                         <div key={item.id} className="blog-masonry-post">
                            <div className="blog-masonry-thumb">
-                              <Link href={`/blog-details/${item.id}`}><Image src={item.thumb} alt="" /></Link>
+                              <Link href={`/opportunity-details/${item.id}`}><Image src={item.thumb} alt="" /></Link>
                            </div>
                            <div className="blog-masonry-content">
                               <div className="blog-meta">
@@ -65,13 +65,13 @@ const BlogArea = () => {
                                     <li><i className="fas fa-dollar-sign"></i>{item.investmentValue}</li>
                                  </ul>
                               </div>
-                              <h2 className="title"><Link href={`/blog-details/${item.id}`}>{item.title}</Link></h2>
+                              <h2 className="title"><Link href={`/opportunity-details/${item.id}`}>{item.title}</Link></h2>
                                 <p>{item.desc.split(" ").slice(0, 50).join(" ")}...</p>
                               <div className="content-bottom">
                                  <div className="blog-author">
                                  </div>
                                  <div className="read-more-btn">
-                                    <Link href={`/blog-details/${item.id}`}>Read More<i className="fas fa-arrow-right"></i></Link>
+                                    <Link href={`/opportunity-details/${item.id}`}>Read More<i className="fas fa-arrow-right"></i></Link>
                                  </div>
                               </div>
                            </div>

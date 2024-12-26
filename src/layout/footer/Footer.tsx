@@ -33,7 +33,7 @@ const footer_data: DataType[] = [
       id: 3,
       class_name: "col-xl-3 col-lg-3 col-md-4 col-sm-4",
       title: "Usefull Links",
-      footer_link: [{ link: "/contact", link_title: "Help Center" }, { link: "/contact", link_title: "Partners" }, { link: "/contact", link_title: "Suggestions" }, { link: "/blog", link_title: "Blog" }, { link: "/contact", link_title: "Newsletters" },]
+      footer_link: [{ link: "/contact", link_title: "Help Center" }, { link: "/contact", link_title: "Partners" }, { link: "/contact", link_title: "Suggestions" }, { link: "/oppotunities", link_title: "Blog" }, { link: "/contact", link_title: "Newsletters" },]
    },
 ]
 
