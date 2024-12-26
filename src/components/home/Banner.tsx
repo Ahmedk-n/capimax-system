@@ -13,7 +13,7 @@ const Banner = () => {
                <div className="col-lg-10">
                   <div className="banner-content text-center">
                      <h2 className="title">Discover the Global Reach of CapiMax Investments: <br /> <span>A World of Opportunities Awaits</span></h2>
-                     <p>A trusted leader in investment, with registered branches in the UK, USA, and UAE <br />driving innovation and financial growth globally.</p>
+                     <p>A trusted leader in investment, with registered branches in <br />driving innovation and financial growth globally.</p>
                      <div className="banner-countdown-wrap">
                         <div className="coming-time" data-countdown="2024/8/29">
                            <CountdownClock />

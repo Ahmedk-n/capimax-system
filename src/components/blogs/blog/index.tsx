@@ -4,7 +4,7 @@ import BlogArea from "./BlogArea";
 const Blog = () => {
   return (
     <main>
-      <Breadcrumb title="Our Blog" />
+      <Breadcrumb title="Investements" />
       <BlogArea/>
     </main>
   )
