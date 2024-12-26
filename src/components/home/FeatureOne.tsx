@@ -108,7 +108,7 @@ const FeatureOne = () => {
 
    return (
       <section 
-         id="feature" 
+         id="investment-plans" 
          className="features-area pt-140 pb-110"
          style={{
             transition: 'all 0.5s ease-out',

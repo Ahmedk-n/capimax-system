@@ -20,8 +20,8 @@ const menu_data: MenuItem[] = [
     {
         id: 2,
         has_dropdown: false,
-        title: "Investement Plans",
-        link: "/#feature",
+        title: "Our Services",
+        link: "/#investment-plans", // Changed from #feature to be more semantic
     },
     {
         id: 3,

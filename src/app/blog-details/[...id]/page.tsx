@@ -1,4 +1,4 @@
-import BlogDetailsArea from "@/components/blogs/blog-details/BlogDetailsArea";
+import BlogDetailsArea from "@/components/blogs/opportunity-details/BlogDetailsArea";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import blog_data from "@/data/BlogData";
 import Wrapper from "@/layout/Wrapper";

@@ -1,5 +1,5 @@
 "use client"
-import BlogDetailsArea from "@/components/blogs/blog-details/BlogDetailsArea";
+import BlogDetailsArea from "@/components/blogs/opportunity-details/BlogDetailsArea";
 
 const BlogDetailsPage = () => {
   return <BlogDetailsArea />;
