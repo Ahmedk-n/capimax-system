@@ -1,5 +1,4 @@
 "use client";
-import faq_data from "@/data/FaqData";
 import { useEffect, useState } from "react";
 
 interface faqItem {
@@ -104,7 +103,7 @@ const FAQ = () => {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="section-title text-center mb-70">
-                        <h2 className="title">Ask Quick Question</h2>
+                        <h2 className="title">Frequently Asked Questions</h2>
                      </div>
                   </div>
                </div>
