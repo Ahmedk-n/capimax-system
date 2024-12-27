@@ -3,7 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
-import team_data from "@/data/TeamData";  // Import the team data
+import Faq from "./FAQ";
+import DownloadArea from "../home/DownloadArea";
+import team_data_UK from "@/data/TeamDataUK";
+import team_data_USA from "@/data/TeamDataUSA";
+import team_data_UAE from "@/data/TeamDataUAE";
+import team_data_ARE from "@/data/TeamDataARE";
 
 // Roadmap data and settings
 interface DataTyfe {
@@ -16,41 +21,41 @@ interface DataTyfe {
 const roadmap_data: DataTyfe[] = [
    {
       id: 1,
-      roadmap_title: "Easy Investment Access",
-      title: "Quick Investment",
-      desc: (<>Investing with Capimax is easy and fast through the website or app, offering a smooth, no-hassle process for investors.</>),
+      roadmap_title: "Global Presence",
+      title: "Worldwide Influence in Business",
+      desc: (<>Capimax Global owns 14 companies engaging in 72 activities, licensed in 7 countries across 4 continents, demonstrating unmatched diversity and global reach.</>),
    },
    {
       id: 2,
-      roadmap_title: "High Returns",
-      title: "Attractive Profits",
-      desc: (<>Capimax offers high returns, giving investors excellent profit opportunities with minimal effort required all things we will cover.</>),
+      roadmap_title: "United Kingdom Ventures",
+      title: "Extensive UK Investments",
+      desc: (<>Capimax operates 7 licensed companies in the UK, excelling in over 28 diverse activities such as wealth management, financial markets, real estate, and construction.</>),
    },
    {
       id: 3,
-      roadmap_title: "Security and Insurance",
-      title: "Guaranteed Security",
-      desc: (<>Your investment is secured with insurance, ensuring the protection of both the principal amount and profits according to your plan.</>),
+      roadmap_title: "United States Operations",
+      title: "Robust US-Based Initiatives",
+      desc: (<>In the US, Capimax oversees 2 licensed companies focused on public investments, portfolio management, and general trading, ensuring a strong presence in America.</>),
    },
    {
       id: 4,
-      roadmap_title: "No Hidden Fees",
-      title: "No Extra Charges",
-      desc: (<>Investing with Capimax comes with no subscription fees, no hidden charges, and no monthly expenses—clear and transparent.</>),
+      roadmap_title: "UAE Enterprises",
+      title: "Strategic Ventures in UAE",
+      desc: (<>Capimax manages 5 licensed companies in the UAE specializing in investments, operations, construction, facilities management, and other strategically activities.</>),
    },
    {
       id: 5,
-      roadmap_title: "Flexible Returns",
-      title: "Flexible Payouts",
-      desc: (<>Choose from monthly, quarterly, or semi-annual payouts, offering you flexible options to suit your financial goals.</>),
+      roadmap_title: "Egyptian Projects",
+      title: "Emerging Ventures in Egypt",
+      desc: (<>In Egypt, Capimax has 2 licensed companies working in engineering and construction, with new licenses for financial services and real estate investments.</>),
    },
    {
       id: 6,
-      roadmap_title: "Quick Withdrawals",
-      title: "Fast Fund Withdrawal",
-      desc: (<>With Capimax, you can easily withdraw your funds quickly, providing you fast access to your earnings whenever needed.</>),
+      roadmap_title: "Integrated Solutions",
+      title: "Unified Business Ecosystem",
+      desc: (<>Capimax Global combines expertise across sectors such as wealth management, financial markets, real estate, engineering, and construction for holistic solutions.</>),
    },
-]
+];
 
 const settings = {
    dots: false,
@@ -112,14 +117,6 @@ const settings = {
    ]
 }
 
-import downloadBtnImg_1 from "../../../public/assets/img/images/download_btn01.png";
-import downloadBtnImg_2 from "../../../public/assets/img/images/download_btn02.png";
-import downloadImg_1 from "../../../public/assets/img/images/download_img01.png";
-import downloadImg_2 from "../../../public/assets/img/images/download_img02.png";
-import downloadShape_1 from "../../../public/assets/img/images/download_shape01.png";
-import downloadShape_2 from "../../../public/assets/img/images/download_shape02.png";
-import FAQ from "../home/Faq";
-import DownloadArea from "../home/DownloadArea";
 
 const ContactArea = () => {
    return (
@@ -135,17 +132,13 @@ const ContactArea = () => {
                      <div className="section-title text-center mb-50">
                         <h2 className="title">Our International Licenses</h2>
                         <p className="subtitle">
-                           Capimax Investment is licensed to operate and establish investment
-                           funds, manage and run operations, and practice all types of
-                           investment and commerce. Below are the details of some licenses
-                           obtained from the official government websites of the licensing
-                           countries.
+                        The companies owned by Capimax in the United Kingdom and bearing the name Capimax.
                         </p>
                      </div>
                   </div>
                </div>
                <div className="row">
-                  {team_data.map((item) => (
+                  {team_data_UK.map((item) => (
                      <div key={item.id} className="col-lg-4 col-md-6">
                         <div className="license-card">
                            <div className="license-flag">
@@ -172,14 +165,140 @@ const ContactArea = () => {
                </div>
             </div>
          </section>
-
+         <section
+            className="team-area team-bg"
+            style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
+         >
+            <div className="container">
+               <div className="row">
+                  <div className="col-12">
+                     <div className="section-title text-center mb-50">
+                        <p className="subtitle">
+                        The companies owned by Capimax in the United States of America.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div className="row">
+                  {team_data_USA.map((item) => (
+                     <div key={item.id} className="col-lg-4 col-md-6">
+                        <div className="license-card">
+                           <div className="license-flag">
+                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                           </div>
+                           <div className="license-details">
+                              <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
+                              <p style={{ fontSize: '0.9rem' }}>
+                                 <strong>Reg No:</strong> XXXXXXX
+                              </p>
+                              <p style={{ fontSize: '0.9rem' }}>
+                                 <strong>Authorized Activities:</strong> Licensed activities
+                                 mentioned in the official documents.
+                              </p>
+                              <div className="learn-more-btn">
+                                 <Link href="https://www.example.com" className="btn">
+                                    Verify License
+                                 </Link>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  ))}
+               </div>
+            </div>
+         </section>
+         <section
+            className="team-area team-bg"
+            style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
+         >
+            <div className="container">
+               <div className="row">
+                  <div className="col-12">
+                     <div className="section-title text-center mb-50">
+                        <p className="subtitle">
+                        The companies owned by Capimax in the United Arab Emirates.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div className="row">
+                  {team_data_UAE.map((item) => (
+                     <div key={item.id} className="col-lg-4 col-md-6">
+                        <div className="license-card">
+                           <div className="license-flag">
+                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                           </div>
+                           <div className="license-details">
+                              <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
+                              <p style={{ fontSize: '0.9rem' }}>
+                                 <strong>Reg No:</strong> XXXXXXX
+                              </p>
+                              <p style={{ fontSize: '0.9rem' }}>
+                                 <strong>Authorized Activities:</strong> Licensed activities
+                                 mentioned in the official documents.
+                              </p>
+                              <div className="learn-more-btn">
+                                 <Link href="https://www.example.com" className="btn">
+                                    Verify License
+                                 </Link>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  ))}
+               </div>
+            </div>
+         </section>
+         <section
+            className="team-area team-bg"
+            style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
+         >
+            <div className="container">
+               <div className="row">
+                  <div className="col-12">
+                     <div className="section-title text-center mb-50">
+                        <p className="subtitle">
+                        The companies owned by Capimax in Egypt.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div className="row">
+                  {team_data_ARE.map((item) => (
+                     <div key={item.id} className="col-lg-4 col-md-6">
+                        <div className="license-card">
+                           <div className="license-flag">
+                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                           </div>
+                           <div className="license-details">
+                              <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
+                              <p style={{ fontSize: '0.9rem' }}>
+                                 <strong>Reg No:</strong> XXXXXXX
+                              </p>
+                              <p style={{ fontSize: '0.9rem' }}>
+                                 <strong>Authorized Activities:</strong> Licensed activities
+                                 mentioned in the official documents.
+                              </p>
+                              <div className="learn-more-btn">
+                                 <Link href="https://www.example.com" className="btn">
+                                    Verify License
+                                 </Link>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  ))}
+               </div>
+            </div>
+         </section>
+         
          {/* Roadmap / Investment and Insurance Section */}
          <section id="roadMap" className="roadmap-area pt-140">
             <div className="container-fluid p-0">
                <div className="row g-0">
                   <div className="col-lg-12">
                      <div className="section-title text-center mb-70">
-                        <h2 className="title">Investment Benefits & Guarantees with Capimax</h2>
+                        <h2 className="title">Capimax Global Ventures & Achievements</h2>
                      </div>
                   </div>
                </div>
@@ -198,7 +317,7 @@ const ContactArea = () => {
                </Slider>
             </div>
          </section>
-         <FAQ />
+         <Faq />
          <DownloadArea />
 
          <style jsx>{`
