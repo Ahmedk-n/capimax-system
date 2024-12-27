@@ -1,13 +1,13 @@
-import Error from "@/components/error/Index";
+import Contact from "@/components/global";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "404 error || CapiMax Investments  ",
+   title: "Contact CapiMax - Investments  ",
 };
 const index = () => {
    return (
       <Wrapper>
-         <Error />
+         <Contact />
       </Wrapper>
    )
 }

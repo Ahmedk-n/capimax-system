@@ -1,121 +1,86 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import team_data from "@/data/TeamData";
+'use client';
 
-const Team = () => {
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const licenses = Array.from({ length: 15 }, (_, i) => ({
+  id: i + 1,
+  title: `License ${i + 1}`,
+  description: `This is the description for License ${i + 1}.`,
+  flag: `/flags/flag-${i + 1}.png`, // Replace with the actual flag image paths
+}));
+
+const Area = () => {
+  const sliderSettings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1024, // For tablet
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600, // For mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section
-      className="team-area team-bg"
-      style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
-    >
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="section-title text-center mb-50">
-              <h2 className="title">Our International Licenses</h2>
-              <p className="subtitle">
-                Capimax Investment is licensed to operate and establish investment
-                funds, manage and run operations, and practice all types of
-                investment and commerce. Below are the details of some licenses
-                obtained from the official government websites of the licensing
-                countries.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          {team_data.map((item, index) => (
-            <div key={item.id} className="col-lg-4 col-md-6">
-              <div className="license-card">
-                <div className="license-flag">
-                  <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
-                </div>
-                <div className="license-details">
-                  <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
-                  <p style={{ fontSize: '0.9rem' }}>
-                    <strong>Reg No:</strong> XXXXXXX
-                  </p>
-                  <p style={{ fontSize: '0.9rem' }}>
-                    <strong>Authorized Activities:</strong> Licensed activities
-                    mentioned in the official documents.
-                  </p>
-                  <div className="learn-more-btn">
-                    <Link href="https://www.example.com" className="btn">
-                      Verfy License
-                    </Link>
-                  </div>
-                </div>
+    <div style={{ margin: '20px', background: '#f0f4f8', padding: '20px', borderRadius: '8px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Licenses</h2>
+      <Slider {...sliderSettings}>
+        {licenses.map((license) => (
+          <div key={license.id} style={{ padding: '0 15px' }}> {/* Horizontal spacing */}
+            <div
+              style={{
+                border: '1px solid #ddd',
+                borderRadius: '12px',
+                background: 'linear-gradient(135deg, #6B73FF 0%, #000DFF 100%)',
+                color: '#fff',
+                padding: '20px',
+                textAlign: 'center',
+                position: 'relative',
+                height: '180px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
+            >
+              {/* Flag Image */}
+              <img
+                src={license.flag}
+                alt={`${license.title} flag`}
+                style={{
+                  width: '40px',
+                  height: '30px',
+                  objectFit: 'cover',
+                  borderRadius: '4px',
+                  position: 'absolute',
+                  top: '15px',
+                  right: '15px',
+                }}
+              />
+              {/* Card Content */}
+              <div>
+                <h3 style={{ fontSize: '18px', marginBottom: '10px' }}>{license.title}</h3>
+                <p style={{ fontSize: '14px', lineHeight: '1.4' }}>{license.description}</p>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-      <style jsx>{`
-        .team-area {
-          padding: 50px 0;
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-        }
-
-        .section-title {
-          margin-bottom: 50px;
-        }
-
-        .section-title .title {
-          font-size: 2.5rem;
-          margin-bottom: 10px;
-        }
-
-        .subtitle {
-          font-size: 1.1rem;
-          line-height: 1.6;
-        }
-
-        .license-card {
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          border-radius: 10px;
-          padding: 15px;
-          text-align: center;
-          transition: transform 0.3s;
-        }
-
-        .license-card:hover {
-          transform: translateY(-10px);
-        }
-
-        .license-flag {
-          margin-bottom: 10px;
-        }
-
-        .license-flag img {
-          max-width: 100%;
-          height: auto;
-        }
-
-        .country-name {
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-        }
-
-        .license-details p {
-          font-size: 0.9rem;
-          margin-bottom: 8px;
-        }
-
-        .learn-more-btn {
-          margin-top: 10px;
-        }
-
-        .btn:hover {
-          background-color:rgba(199, 199, 199, 0.93);
-          text-decoration: none;
-        }
-      `}</style>
-    </section>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
-export default Team;
+export default Area;

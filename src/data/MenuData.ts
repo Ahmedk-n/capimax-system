@@ -26,8 +26,8 @@ const menu_data: MenuItem[] = [
     {
         id: 3,
         has_dropdown: false,
-        title: "Charts",
-        link: "/#chart",
+        title: "Global",
+        link: "/global",
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const menu_data: MenuItem[] = [
     {
         id: 5,
         has_dropdown: false,
-        title: "Opportunities",
+        title: "Investments",
         link: "/opportunities",
     },
     {
@@ -49,3 +49,4 @@ const menu_data: MenuItem[] = [
     },
 ];
 export default menu_data;
+
