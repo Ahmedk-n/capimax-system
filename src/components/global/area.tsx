@@ -23,7 +23,7 @@ const roadmap_data: DataTyfe[] = [
       id: 1,
       roadmap_title: "Global Presence",
       title: "Worldwide Influence in Business",
-      desc: (<>Capimax Global owns 14 companies engaging in 72 activities, licensed in 7 countries across 4 continents, demonstrating unmatched diversity and global reach.</>),
+      desc: (<>Capimax Global owns 14 companies engaging in 72 activities, licensed in 7 countries across 4 continents, demonstrating unmatched diversity.</>),
    },
    {
       id: 2,
@@ -127,7 +127,7 @@ const ContactArea = () => {
             style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
          >
             <div className="container">
-               <div className="row">
+               <div className="row1">
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <h2 className="title">Our International Licenses</h2>
@@ -137,12 +137,12 @@ const ContactArea = () => {
                      </div>
                   </div>
                </div>
-               <div className="row">
+               <div className="row1">
                   {team_data_UK.map((item) => (
                      <div key={item.id} className="col-lg-4 col-md-6">
                         <div className="license-card">
                            <div className="license-flag">
-                              <Image src={item.img} alt={item.title} style={item.style as React.CSSProperties} />
+                              <Image src={item.img} alt={item.title} style={item.style} />
                            </div>
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
@@ -170,7 +170,7 @@ const ContactArea = () => {
             style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
          >
             <div className="container">
-               <div className="row">
+               <div className="row1">
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <p className="subtitle">
@@ -179,12 +179,12 @@ const ContactArea = () => {
                      </div>
                   </div>
                </div>
-               <div className="row">
+               <div className="row1">
                   {team_data_USA.map((item) => (
                      <div key={item.id} className="col-lg-4 col-md-6">
                         <div className="license-card">
                            <div className="license-flag">
-                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                              <Image src={item.img} alt={item.title} style={item.style} />
                            </div>
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
@@ -196,7 +196,7 @@ const ContactArea = () => {
                                  mentioned in the official documents.
                               </p>
                               <div className="learn-more-btn">
-                                 <Link href="https://www.example.com" className="btn">
+                                 <Link href={item.link} className="btn" target="_blank">
                                     Verify License
                                  </Link>
                               </div>
@@ -212,7 +212,7 @@ const ContactArea = () => {
             style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
          >
             <div className="container">
-               <div className="row">
+               <div className="row1">
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <p className="subtitle">
@@ -221,12 +221,12 @@ const ContactArea = () => {
                      </div>
                   </div>
                </div>
-               <div className="row">
+               <div className="row1">
                   {team_data_UAE.map((item) => (
                      <div key={item.id} className="col-lg-4 col-md-6">
                         <div className="license-card">
                            <div className="license-flag">
-                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                              <Image src={item.img} alt={item.title} style={item.style} />
                            </div>
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
@@ -254,7 +254,7 @@ const ContactArea = () => {
             style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
          >
             <div className="container">
-               <div className="row">
+               <div className="row1">
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <p className="subtitle">
@@ -263,12 +263,12 @@ const ContactArea = () => {
                      </div>
                   </div>
                </div>
-               <div className="row">
+               <div className="row1">
                   {team_data_ARE.map((item) => (
                      <div key={item.id} className="col-lg-4 col-md-6">
                         <div className="license-card">
                            <div className="license-flag">
-                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                              <Image src={item.img} alt={item.title} style={{width: "80px", height: "auto"}} />
                            </div>
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
@@ -348,6 +348,7 @@ const ContactArea = () => {
                border-radius: 10px;
                padding: 15px;
                margin-bottom: 30px;
+               margin-right: 20px;
                text-align: center;
                transition: transform 0.3s;
             }

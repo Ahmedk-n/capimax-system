@@ -272,6 +272,13 @@ label {
 .row.g-0 {
 	--bs-gutter-x: 0;
 }
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
 .gutter-y-30 {
   	--bs-gutter-y: 30px;
 }

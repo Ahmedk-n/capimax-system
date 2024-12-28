@@ -9,6 +9,8 @@ interface DataType {
    title: string;
    RegNo: string; 
    type: string;
+   style: React.CSSProperties;
+   link: string;
 }
 
 const team_data_USA: DataType[] = [
@@ -18,6 +20,8 @@ const team_data_USA: DataType[] = [
       title: "Capimax Investment (Wyoming)",
       RegNo: "2024-001559635",
       type: "ID:",
+      style: { textAlign: "center" },
+      link: "https://wyobiz.wyo.gov/business/FilingDetails.aspx?eFNum=079174029173101079135016035129142002222241081018"
    },
    {
       id: 2,
@@ -25,6 +29,8 @@ const team_data_USA: DataType[] = [
       title: "Capimax General Trading (New York)",
       RegNo: "7469500",
       type: "DOS ID:",
+      style: { width: "80px", height: "auto" },
+      link: "https://apps.dos.ny.gov/publicInquiry/EntityDisplay"
    },
 ];
 

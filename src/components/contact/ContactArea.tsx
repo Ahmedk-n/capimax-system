@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ContactForm from "../forms/ContactForm"
+import ContactForm from "../forms/ContactForm";
 
 interface DataType {
    id: number;
@@ -12,28 +12,64 @@ const contact_data: DataType[] = [
    {
       id: 1,
       icon: "fas fa-map-marker-alt",
-      title: "Location",
-      info: (<>1901 Thornridge Cir. <br /> Shiloh, Hawaii</>),
+      title: "UAE Location",
+      info: (<>Abu Dhabi, Al Reem Island, Addax Tower</>),
    },
    {
       id: 2,
-      icon: "fas fa-phone-alt",
-      title: "Contact",
-      info: (<><Link href="tel:0123456789">+88(0) 555-0108</Link> <br /> <Link href="tel:0123456789">+88(0) 555-01117</Link></>),
+      icon: "fas fa-map-marker-alt",
+      title: "UK Locations",
+      info: (
+         <>
+            128 City Road, London, EC1V 2NX <br />
+            167-169 Great Portland Street, 5th Floor, London, W1W 5PF
+         </>
+      ),
    },
    {
       id: 3,
-      icon: "fas fa-envelope",
-      title: "Email",
-      info: (<><Link href="mailto:.@example.com">sara.cruz@example.com</Link> <br /> <Link href="mailto:.@example.com">.@example.com</Link></>),
+      icon: "fas fa-map-marker-alt",
+      title: "US Locations",
+      info: (
+         <>
+            418 Broadway, Ste R, Albany, NY 12207 <br />
+            30 N Gould St Ste R, Sheridan, <br /> WY 82801
+         </>
+      ),
    },
    {
       id: 4,
+      icon: "fas fa-phone-alt",
+      title: "Contact Numbers",
+      info: (
+         <>
+            <strong>UAE:</strong> <Link href="tel:00971585672519">00971585672519</Link>
+            <br />
+            <strong>UK:</strong> <Link href="tel:00447441358588">00447441358588</Link>
+            <br />
+            <strong>USA:</strong> <Link href="tel:0012342795751">0012342795751</Link>
+         </>
+      ),
+   },
+   {
+      id: 5,
+      icon: "fas fa-envelope",
+      title: "Email",
+      info: (
+         <>
+            <Link href="mailto:info@capimaxinvestment.com">
+               info@capimaxinvestment.com
+            </Link>
+         </>
+      ),
+   },
+   {
+      id: 6,
       icon: "fas fa-business-time",
       title: "Visit Between",
-      info: (<>Mon - Sat : 8.00-5.00 <br /> Sunday : Closed</>),
+      info: (<>Mon - Sat : 8.00-5.00 </>),
    },
-]
+];
 
 const ContactArea = () => {
    return (
@@ -56,7 +92,7 @@ const ContactArea = () => {
                   ))}
                </div>
             </div>
-            
+
             <div className="contact-form-wrap">
                <div className="row g-0">
                   <div className="col-57 order-0 order-lg-2">
@@ -68,14 +104,23 @@ const ContactArea = () => {
                   </div>
                   <div className="col-43">
                      <div className="contact-map">
-                        <iframe src="https://geo-devrel-javascript-samples.web.app/samples/style-array/app/dist/" allowFullScreen loading="lazy"></iframe>
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.610924709642!2d54.38604907497572!3d24.493557479243387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e66dbd59a7c3b%3A0x898c1e7c522451e2!2sAddax%20Tower%2C%20Al%20Reem%20Island!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                           allowFullScreen
+                           loading="lazy"
+                           style={{
+                              border: 0,
+                              width: "100%",
+                              height: "100%",
+                           }}
+                        ></iframe>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-   )
-}
+   );
+};
 
-export default ContactArea
+export default ContactArea;
