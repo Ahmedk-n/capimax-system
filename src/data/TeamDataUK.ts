@@ -40,6 +40,7 @@ const team_data_UK: DataType[] = [
       link: "https://find-and-update.company-information.service.gov.uk/company/16099090",
       style: { width: "80px", height: "auto" },
    },
+   
    {
       id: 4,
       img: teamImg,
