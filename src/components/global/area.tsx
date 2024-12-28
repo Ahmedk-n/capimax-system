@@ -132,7 +132,7 @@ const ContactArea = () => {
                      <div className="section-title text-center mb-50">
                         <h2 className="title">Our International Licenses</h2>
                         <p className="subtitle">
-                        The companies owned by Capimax in the United Kingdom and bearing the name Capimax.
+                        The companies owned by Capimax in the United Kingdom and bearing the name Capimax
                         </p>
                      </div>
                   </div>
@@ -142,19 +142,19 @@ const ContactArea = () => {
                      <div key={item.id} className="col-lg-4 col-md-6">
                         <div className="license-card">
                            <div className="license-flag">
-                              <Image src={item.img} alt={item.title} style={{ width: '80px', height: 'auto' }} />
+                              <Image src={item.img} alt={item.title} style={item.style as React.CSSProperties} />
                            </div>
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
                               <p style={{ fontSize: '0.9rem' }}>
-                                 <strong>Reg No:</strong> XXXXXXX
+                                 <strong>Reg No:</strong> {item.RegNo}
                               </p>
                               <p style={{ fontSize: '0.9rem' }}>
                                  <strong>Authorized Activities:</strong> Licensed activities
                                  mentioned in the official documents.
                               </p>
                               <div className="learn-more-btn">
-                                 <Link href="https://www.example.com" className="btn">
+                                 <Link href = {item.link} className="btn" target= "_blank">
                                     Verify License
                                  </Link>
                               </div>
@@ -174,7 +174,7 @@ const ContactArea = () => {
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <p className="subtitle">
-                        The companies owned by Capimax in the United States of America.
+                        The companies owned by Capimax in the United States of America
                         </p>
                      </div>
                   </div>
@@ -189,7 +189,7 @@ const ContactArea = () => {
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
                               <p style={{ fontSize: '0.9rem' }}>
-                                 <strong>Reg No:</strong> XXXXXXX
+                                 <strong>{item.type}</strong> {item.RegNo}
                               </p>
                               <p style={{ fontSize: '0.9rem' }}>
                                  <strong>Authorized Activities:</strong> Licensed activities
@@ -216,7 +216,7 @@ const ContactArea = () => {
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <p className="subtitle">
-                        The companies owned by Capimax in the United Arab Emirates.
+                        The companies owned by Capimax in the United Arab Emirates
                         </p>
                      </div>
                   </div>
@@ -231,7 +231,7 @@ const ContactArea = () => {
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
                               <p style={{ fontSize: '0.9rem' }}>
-                                 <strong>Reg No:</strong> XXXXXXX
+                                 <strong>Reg No:</strong> {item.RegNo}
                               </p>
                               <p style={{ fontSize: '0.9rem' }}>
                                  <strong>Authorized Activities:</strong> Licensed activities
@@ -258,7 +258,7 @@ const ContactArea = () => {
                   <div className="col-12">
                      <div className="section-title text-center mb-50">
                         <p className="subtitle">
-                        The companies owned by Capimax in Egypt.
+                        The companies owned by Capimax in Egypt
                         </p>
                      </div>
                   </div>
@@ -273,7 +273,7 @@ const ContactArea = () => {
                            <div className="license-details">
                               <h3 className="country-name" style={{ fontSize: '1.2rem' }}>{item.title}</h3>
                               <p style={{ fontSize: '0.9rem' }}>
-                                 <strong>Reg No:</strong> XXXXXXX
+                                 <strong>Reg No:</strong> {item.RegNo}
                               </p>
                               <p style={{ fontSize: '0.9rem' }}>
                                  <strong>Authorized Activities:</strong> Licensed activities
@@ -291,7 +291,6 @@ const ContactArea = () => {
                </div>
             </div>
          </section>
-         
          {/* Roadmap / Investment and Insurance Section */}
          <section id="roadMap" className="roadmap-area pt-140">
             <div className="container-fluid p-0">
@@ -326,6 +325,7 @@ const ContactArea = () => {
                background-size: cover;
                background-position: center;
                color: #fff;
+               
             }
 
             .section-title {
@@ -347,6 +347,7 @@ const ContactArea = () => {
                border: 1px solid rgba(255, 255, 255, 0.2);
                border-radius: 10px;
                padding: 15px;
+               margin-bottom: 30px;
                text-align: center;
                transition: transform 0.3s;
             }

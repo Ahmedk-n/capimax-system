@@ -6,18 +6,21 @@ interface DataType {
    id: number;
    img: StaticImageData;
    title: string;
+   RegNo: string;
 }
 
 const team_data_ARE: DataType[] = [
    {
       id: 1,
       img: teamImg,
-      title: "Arab Republic of Egypt",
+      title: "Al-Omrat Engineering and Contracting",
+      RegNo:"10478 from 2004"
    },
    {
       id: 2,
       img: teamImg,
-      title: "Arab Republic of Egypt",
+      title: "Capimax Investment",
+      RegNo:"Under Process"
    },
 ]
 
