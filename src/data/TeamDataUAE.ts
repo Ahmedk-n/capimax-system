@@ -11,6 +11,7 @@ interface DataType {
    title: string;
    RegNo: string;
    style: React.CSSProperties;
+   link: string;
 }
 
 const team_data_UAE: DataType[] = [
@@ -20,6 +21,7 @@ const team_data_UAE: DataType[] = [
       title: "Capimax Investment (Abu Dhabi)",
       RegNo:"CN5639305",
       style: { textAlign: "center" },
+      link: "https://www.tamm.abudhabi/wb/ded/tahaqaq/details"
    },
    {
       id: 2,
@@ -27,6 +29,7 @@ const team_data_UAE: DataType[] = [
       title: "Trustec Construction Contracting",
       RegNo: "230035 (Since 1982, Dubai)",
       style: { textAlign: "center" },
+      link: "https://www.capimax.ae/"
    },
    {
       id: 3,
@@ -34,20 +37,23 @@ const team_data_UAE: DataType[] = [
       title: "Profit Max Management",
       RegNo: "1381984 (Dubai)",
       style: { textAlign: "center" },
+      link: "https://www.capimax.ae/"
    },
    {
       id: 4,
       img: teamImg,
       title: "Future Access Contracting",
       RegNo: "1133109 (Dubai)",
-      style: { width: "80px", height: "auto" }
+      style: { width: "80px", height: "auto" },
+      link: "https://www.capimax.ae/"
    },
    {
       id: 5,
       img: teamImg,
       title: "Naseem Al-Rayan Facilities Management",
       RegNo: "1133993 (Dubai)",
-      style: { width: "80px", height: "auto" }
+      style: { width: "80px", height: "auto" },
+      link: "https://www.capimax.ae/"
    },
 ]
 
