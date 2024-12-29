@@ -4,7 +4,7 @@ import ContactForm from "../forms/ContactForm";
 interface DataType {
    id: number;
    icon: string;
-   title: string;
+   title: JSX.Element;
    info: JSX.Element;
 }
 
@@ -12,62 +12,121 @@ const contact_data: DataType[] = [
    {
       id: 1,
       icon: "fas fa-map-marker-alt",
-      title: "UAE Location",
-      info: (<>Abu Dhabi, Al Reem Island, Addax Tower</>),
+      title: (
+         <>
+            <img
+               src="https://flagcdn.com/w40/ae.png"
+               alt="UAE Flag"
+               style={{ width: 32, marginRight: 8 }}
+            />
+            UAE Location
+         </>
+      ),
+      info: (
+         <p>
+            <strong>1.</strong> Abu Dhabi, Al Reem Island, Addax Tower
+         </p>
+      ),
    },
    {
       id: 2,
       icon: "fas fa-map-marker-alt",
-      title: "UK Locations",
-      info: (
+      title: (
          <>
-            128 City Road, London, EC1V 2NX <br />
-            167-169 Great Portland Street, 5th Floor, London, W1W 5PF
+            <img
+               src="https://flagcdn.com/w40/gb.png"
+               alt="UK Flag"
+               style={{ width: 32, marginRight: 8 }}
+            />
+            UK Locations
          </>
+      ),
+      info: (
+         <p>
+            <strong>1.</strong> 128 City Road, London, EC1V 2NX <br />
+            <strong>2.</strong> 167-169 Great Portland Street, 5th Floor, London, W1W 5PF
+         </p>
       ),
    },
    {
       id: 3,
       icon: "fas fa-map-marker-alt",
-      title: "US Locations",
-      info: (
+      title: (
          <>
-            418 Broadway, Ste R, Albany, NY 12207 <br />
-            30 N Gould St Ste R, Sheridan, <br /> WY 82801
+            <img
+               src="https://flagcdn.com/w40/us.png"
+               alt="USA Flag"
+               style={{ width: 32, marginRight: 8 }}
+            />
+            US Locations
          </>
+      ),
+      info: (
+         <p>
+            <strong>1.</strong> 418 Broadway, Ste R, Albany, NY 12207 <br />
+            <strong>2.</strong> 30 N Gould St Ste R, Sheridan, WY 82801
+         </p>
       ),
    },
    {
       id: 4,
       icon: "fas fa-phone-alt",
-      title: "Contact Numbers",
+      title: <span>Contact Numbers</span>,
       info: (
          <>
-            <strong>UAE:</strong> <Link href="tel:00971585672519">00971585672519</Link>
-            <br />
-            <strong>UK:</strong> <Link href="tel:00447441358588">00447441358588</Link>
-            <br />
-            <strong>USA:</strong> <Link href="tel:0012342795751">0012342795751</Link>
+            <p>
+               <strong>
+                  <img
+                     src="https://flagcdn.com/w40/ae.png"
+                     alt="UAE Flag"
+                     style={{ width: 32, marginRight: 8 }}
+                  />
+                  UAE:
+               </strong>{" "}
+               <Link href="tel:00971585672519">00971585672519</Link>
+            </p>
+            <p>
+               <strong>
+                  <img
+                     src="https://flagcdn.com/w40/gb.png"
+                     alt="UK Flag"
+                     style={{ width: 32, marginRight: 8 }}
+                  />
+                  UK:
+               </strong>{" "}
+               <Link href="tel:00447441358588">00447441358588</Link>
+            </p>
+            <p>
+               <strong>
+                  <img
+                     src="https://flagcdn.com/w40/us.png"
+                     alt="USA Flag"
+                     style={{ width: 32, marginRight: 8 }}
+                  />
+                  USA:
+               </strong>{" "}
+               <Link href="tel:0012342795751">0012342795751</Link>
+            </p>
          </>
       ),
    },
    {
       id: 5,
       icon: "fas fa-envelope",
-      title: "Email",
+      title: <span>Email</span>,
       info: (
-         <>
+         <p>
             <Link href="mailto:info@capimaxinvestment.com">
                info@capimaxinvestment.com
             </Link>
-         </>
+         </p>
       ),
    },
    {
       id: 6,
       icon: "fas fa-business-time",
-      title: "Visit Between",
-      info: (<>Mon - Sat : 8.00-5.00 </>),
+      title: <span>Visit Between</span>,
+      info: <p>Mon - Sat : 8.00-5.00</p>,
    },
 ];
 
@@ -85,7 +144,7 @@ const ContactArea = () => {
                            </div>
                            <div className="content">
                               <h6 className="title">{item.title}</h6>
-                              <p>{item.info}</p>
+                              <div>{item.info}</div>
                            </div>
                         </div>
                      </div>

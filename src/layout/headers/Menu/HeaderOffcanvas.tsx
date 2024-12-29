@@ -67,7 +67,6 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                   <div className="contact-list mb-30">
                      <h4>Contact Information</h4>
                      <p>Email: info@capimaxinvestment.com</p>
-                     <p>Website: domain.com</p>
                   </div>
                </div>
                <div className="social-icon-right mt-30">

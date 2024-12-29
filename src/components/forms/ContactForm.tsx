@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
+import { motion } from 'framer-motion';
 
 interface FormData {
    user_name: string;
@@ -31,6 +32,11 @@ const schema = yup
    })
    .required();
 
+const cardVariants = {
+   hidden: { opacity: 0, y: 20 },
+   visible: { opacity: 1, y: 0 }
+};
+
 const ContactForm = () => {
 
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
@@ -55,39 +61,39 @@ const ContactForm = () => {
    };
 
    return (
-      <form ref={form} onSubmit={handleSubmit(sendEmail)}>
+      <motion.form ref={form} onSubmit={handleSubmit(sendEmail)} initial="hidden" animate="visible" variants={cardVariants}>
          <div className="row">
             <div className="col-md-6">
-               <div className="form-grp">
+               <motion.div className="form-grp" variants={cardVariants}>
                   <input type="text" {...register("user_name")} name="user_name" placeholder="Enter you name" />
                   <p className="form_error">{errors.user_name?.message}</p>
-               </div>
+               </motion.div>
             </div>
             <div className="col-md-6">
-               <div className="form-grp">
+               <motion.div className="form-grp" variants={cardVariants}>
                   <input type="email" {...register("user_email")} name="user_email" placeholder="Enter you email" />
                   <p className="form_error">{errors.user_email?.message}</p>
-               </div>
+               </motion.div>
             </div>
             <div className="col-md-6">
-               <div className="form-grp">
+               <motion.div className="form-grp" variants={cardVariants}>
                   <input type="number" {...register("user_phone")} name="user_phone" placeholder="Mobile no" />
                   <p className="form_error">{errors.user_phone?.message}</p>
-               </div>
+               </motion.div>
             </div>
             <div className="col-md-6">
-               <div className="form-grp">
+               <motion.div className="form-grp" variants={cardVariants}>
                   <input type="text" {...register("user_company")} name="user_company" placeholder="Company" />
                   <p className="form_error">{errors.user_company?.message}</p>
-               </div>
+               </motion.div>
             </div>
          </div>
-         <div className="form-grp">
+         <motion.div className="form-grp" variants={cardVariants}>
             <textarea {...register("message")} placeholder="Enter you message....."></textarea>
             <p className="form_error">{errors.message?.message}</p>
-         </div>
-         <button type="submit" value="Send" className="btn">Send Message</button>
-      </form>
+         </motion.div>
+         <motion.button type="submit" value="Send" className="btn" variants={cardVariants}>Send Message</motion.button>
+      </motion.form>
    );
 };
 

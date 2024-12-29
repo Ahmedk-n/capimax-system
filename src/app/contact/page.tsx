@@ -1,15 +1,22 @@
-import Contact from "@/components/contact";
-import Wrapper from "@/layout/Wrapper";
+import React from 'react';
+import ContactForm from '@/components/forms/ContactForm';
+import Breadcrumb from '@/components/common/Breadcrumb';
+import Wrapper from '@/layout/Wrapper';
+import ContactArea from '@/components/contact/ContactArea';
+import DocumentArea from '@/components/common/DocumentArea';
 
 export const metadata = {
    title: "Contact CapiMax - Investments  ",
 };
-const index = () => {
-   return (
-      <Wrapper>
-         <Contact />
-      </Wrapper>
-   )
-}
 
-export default index
+const ContactPage = () => {
+  return (
+    <Wrapper>
+      <Breadcrumb title="Contact Us" />
+      <ContactArea />
+      <DocumentArea />
+    </Wrapper>
+  );
+};
+
+export default ContactPage;
