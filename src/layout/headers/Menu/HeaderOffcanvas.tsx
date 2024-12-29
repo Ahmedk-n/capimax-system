@@ -68,6 +68,7 @@ const HeaderOffcanvas = ({ offCanvas, setOffCanvas }: any) => {
                      <h4>Contact Information</h4>
                      <p>Email: info@capimaxinvestment.com</p>
                   </div>
+                  
                </div>
                <div className="social-icon-right mt-30">
                   <Link href="#">
