@@ -238,7 +238,7 @@ const ContactArea = () => {
                                  mentioned in the official documents.
                               </p>
                               <div className="learn-more-btn">
-                                 <Link href="https://www.example.com" className="btn">
+                                 <Link href={item.link} className="btn" target= "_blank">
                                     Verify License
                                  </Link>
                               </div>
