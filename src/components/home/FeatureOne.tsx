@@ -154,9 +154,6 @@ const FeatureOne = () => {
                         className="features-item"
                         style={{
                            transition: 'transform 0.3s ease-in-out',
-                           cursor: 'pointer',':hover': {
-                              transform: 'translateY(-10px)'
-                           }
                         }}
                         onMouseEnter={(e) => {
                            e.currentTarget.style.transform = 'translateY(-10px)';
