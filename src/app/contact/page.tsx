@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from '@/components/forms/ContactForm';
 import Breadcrumb from '@/components/common/Breadcrumb';
 import Wrapper from '@/layout/Wrapper';
 import ContactArea from '@/components/contact/ContactArea';

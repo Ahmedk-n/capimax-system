@@ -64,7 +64,7 @@ const contact_data: DataType[] = [
       info: (
          <p>
             <strong>1.</strong> 418 Broadway, Ste R, Albany, NY 12207 <br />
-            <strong>2.</strong> 30 N Gould St Ste R, Sheridan, WY 82801
+            <strong>2.</strong> 30 N Gould St Ste R, Sheridan, <br />WY 82801
          </p>
       ),
    },

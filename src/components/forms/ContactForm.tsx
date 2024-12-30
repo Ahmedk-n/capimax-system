@@ -63,6 +63,11 @@ const ContactForm = () => {
    return (
       <motion.form ref={form} onSubmit={handleSubmit(sendEmail)} initial="hidden" animate="visible" variants={cardVariants}>
          <div className="row">
+            <div className="col-lg-12">
+               <div className="section-title text-center mb-60">
+                  <h2 className="title">Have Any Questions?</h2>
+               </div>
+            </div>
             <div className="col-md-6">
                <motion.div className="form-grp" variants={cardVariants}>
                   <input type="text" {...register("user_name")} name="user_name" placeholder="Enter you name" />
