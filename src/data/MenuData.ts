@@ -39,7 +39,7 @@ const menu_data: MenuItem[] = [
         id: 5,
         has_dropdown: false,
         title: "Investments",
-        link: "/#global",
+        link: "/login",
     },
     {
         id: 6,
