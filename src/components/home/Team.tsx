@@ -12,6 +12,7 @@ const licenses = Array.from({ length: 15 }, (_, i) => ({
   flag: `/flags/flag-${i + 1}.png`, // Replace with the actual flag image paths
 }));
 
+
 const Area = () => {
   const sliderSettings = {
     dots: true,
