@@ -5,7 +5,6 @@ const Contact = () => {
    return (
       <main>
          <Breadcrumb title="Contact" />
-         <ContactArea/>
       </main>
    )
 }

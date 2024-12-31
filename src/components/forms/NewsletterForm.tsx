@@ -27,7 +27,7 @@ const NewsletterForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
          <input type="email" {...register("email")} placeholder="Info@gmail.com" />
          <p className="form_error">{errors.email?.message}</p>
-         <button type="submit"><i className="fas fa-paper-plane"></i></button>
+         {/* <button type="submit"><i className="fas fa-paper-plane"></i></button> */}
       </form>
    )
 }

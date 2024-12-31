@@ -38,7 +38,6 @@ const cardVariants = {
 };
 
 const ContactForm = () => {
-
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
 
    const form = useRef<HTMLFormElement>(null);
@@ -94,10 +93,16 @@ const ContactForm = () => {
             </div>
          </div>
          <motion.div className="form-grp" variants={cardVariants}>
-            <textarea {...register("message")} placeholder="Enter you message....."></textarea>
+            <textarea {...register("message")} placeholder="Enter your message....."></textarea>
             <p className="form_error">{errors.message?.message}</p>
          </motion.div>
-         <motion.button type="submit" value="Send" className="btn" variants={cardVariants}>Send Message</motion.button>
+         {/* <motion.button 
+            type="submit" 
+            className="btn" 
+            variants={cardVariants}
+         >
+            Send Message
+         </motion.button> */}
       </motion.form>
    );
 };

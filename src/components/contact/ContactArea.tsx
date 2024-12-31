@@ -156,9 +156,7 @@ const ContactArea = () => {
                <div className="row g-0">
                   <div className="col-57 order-0 order-lg-2">
                      <div className="contact-form">
-                        <h4 className="title">Send a message</h4>
                         <ContactForm />
-                        <p className="ajax-response mb-0"></p>
                      </div>
                   </div>
                   <div className="col-43">

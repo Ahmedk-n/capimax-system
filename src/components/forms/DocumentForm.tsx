@@ -45,10 +45,10 @@ const DocumentForm = () => {
             </div>
          </div>
          <div className="form-grp">
-            <textarea {...register("message")} placeholder="Enter you message....."></textarea>
+            <textarea {...register("message")} placeholder="Enter your message....."></textarea>
             <p className="form_error">{errors.message?.message}</p>
          </div>
-         <button type="submit" className="btn">Send Message</button>
+         {/* <button className="btn">Send Message</button> */}
       </form>
    )
 }

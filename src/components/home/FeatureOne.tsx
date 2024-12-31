@@ -4,18 +4,18 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import featureImg_1 from "@/assets/img/images/features_img01.png"; // Example image
+import featureImg_1 from "@/assets/img/images/features_img03.png"; // Example image
 import featureImg_2 from "@/assets/img/images/features_img02.png";
-import featureImg_3 from "@/assets/img/images/features_img03.png";
-import featureImg_4 from "@/assets/img/images/features_img04.png";
-import featureImg_5 from "@/assets/img/images/features_img01.png"; // Example image
-import featureImg_6 from "@/assets/img/images/features_img02.png";
-import featureImg_7 from "@/assets/img/images/features_img03.png";
-import featureImg_8 from "@/assets/img/images/features_img04.png";
-import featureImg_9 from "@/assets/img/images/features_img01.png"; // Example image
-import featureImg_10 from "@/assets/img/images/features_img02.png";
-import featureImg_11 from "@/assets/img/images/features_img03.png";
-import featureImg_12 from "@/assets/img/images/features_img04.png";
+import featureImg_3 from "@/assets/img/images/features_img04.png";
+import featureImg_4 from "@/assets/img/images/features_img01.png";
+import featureImg_5 from "@/assets/img/images/features_img05.png"; // Example image
+import featureImg_6 from "@/assets/img/images/features_img06.png";
+import featureImg_7 from "@/assets/img/images/features_img07.png";
+import featureImg_8 from "@/assets/img/images/features_img08.png";
+import featureImg_9 from "@/assets/img/images/features_img09.png"; // Example image
+import featureImg_10 from "@/assets/img/images/features_img10.png";
+import featureImg_11 from "@/assets/img/images/features_img11.png";
+import featureImg_12 from "@/assets/img/images/features_img12.png";
 
 
 interface DataType {
