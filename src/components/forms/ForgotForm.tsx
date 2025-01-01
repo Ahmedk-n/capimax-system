@@ -49,7 +49,7 @@ const ForgotForm = () => {
                            <div className="eg-login__bottom mt-30">
                               {/* <button type="submit" className="btn w-100">Send Mail</button> */}
                            </div>
-                           <p>Remeber Passowrd? <Link href="/login">Login</Link></p>
+                           <p>Remeber Passowrd? <Link href="https://www.google.com">Login</Link></p>
                         </div>
                      </form>
                   </div>

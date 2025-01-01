@@ -21,7 +21,7 @@ const footer_data: DataType[] = [
       id: 1,
       class_name: "col-xl-3 col-lg-3 col-md-4 col-sm-6",
       title: "Usefull Links",
-      footer_link: [{ link: "/contact", link_title: "Contact us" }, { link: "/#roadMap", link_title: "How it Works" }, { link: "/login", link_title: "Create" }, { link: "/#investment-plans", link_title: "Explore" }, { link: "/contact", link_title: "Terms & Services" },]
+      footer_link: [{ link: "/contact", link_title: "Contact us" }, { link: "/#roadMap", link_title: "How it Works" }, { link: "https://www.google.com", link_title: "Create" }, { link: "/#investment-plans", link_title: "Explore" }, { link: "/contact", link_title: "Terms & Services" },]
    },
    {
       id: 2,

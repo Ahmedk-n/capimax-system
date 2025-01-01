@@ -32,7 +32,7 @@ const Header = () => {
                                         <div className="header-action" data-animation="animate__fadeInRight">
                                             <ul className="list-wrap">
                                                 <li className="header-login animate__animated animate__bounceIn animate__delay-1s">
-                                                    <Link href="/login">Login<i className="fas fa-user"></i></Link>
+                                                    <Link href="https://www.google.com">Login<i className="fas fa-user"></i></Link>
                                                 </li>
                                                 <li className="offcanvas-menu animate__animated animate__bounceIn animate__delay-2s">
                                                     <a onClick={() => setOffCanvas(true)} style={{ cursor: "pointer" }} className="menu-tigger">
