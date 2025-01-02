@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import BlogArea from "./BlogArea";
+import BlogArea from "../../blogs/blog/BlogArea";
 
 const Blog = () => {
   return (

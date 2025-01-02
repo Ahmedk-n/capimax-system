@@ -1,26 +1,15 @@
 import { StaticImageData } from "next/image";
 
-import blogThumb_1 from "@/assets/img/logo/logo.png"
-import blogThumb_2 from "@/assets/img/logo/logo.png"
-import blogThumb_3 from "@/assets/img/logo/logo.png"
-import blogThumb_4 from "@/assets/img/logo/logo.png"
-
-import blogAvatar_1 from "@/assets/img/logo/logo.png"
-import blogAvatar_2 from "@/assets/img/logo/logo.png"
-import blogAvatar_3 from "@/assets/img/logo/logo.png"
-import blogAvatar_4 from "@/assets/img/logo/logo.png"
+import blogThumb_1 from "@/assets/img/insurance/first-image.jpg"
+import blogThumb_2 from "@/assets/img/insurance/second-image.jpg"
 
 interface DataType {
    id: number;
    post: string;
    thumb: StaticImageData;
    date: string;
-   comment: string;
-   views: string;
    title: string;
    desc: string;
-   author_avatar: StaticImageData;
-   author_name: string;
 }
 
 const blog_data: DataType[] = [
@@ -28,74 +17,18 @@ const blog_data: DataType[] = [
       id: 1,
       post: "masonry",
       thumb: blogThumb_1,
-      date: "2023/03/15",
-      comment: "07",
-      views: "1,752Viewers",
-      title: "The Power of Blockchain don't Miss Out on Our ICO",
-      desc: "Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..",
-      author_avatar: blogAvatar_1,
-      author_name: "Tom Cruise",
+      date: "2025/01/01",
+      title: "Discover Insured Investments with Capimax",
+      desc: "Capimax's insured investments ensure your principal and profits are protected. Partnering with global leaders like HCC International, we redefine secure investment opportunities for your peace of mind.",
    },
    {
       id: 2,
       post: "masonry",
       thumb: blogThumb_2,
-      date: "2023/03/20",
-      comment: "09",
-      views: "1,762Viewers",
-      title: "Invest in the Next Big Thing discover Our ICO Opportunity",
-      desc: "Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..",
-      author_avatar: blogAvatar_2,
-      author_name: "Max Power",
+      date: "2025/01/01",
+      title: "Capimax: Unique Insured Investment Advantages",
+      desc: "With Capimax, invest confidently in insured opportunities backed by HCC International. Our global coverage ensures comprehensive protection, providing unparalleled security for your investments. ensuring every single share will reward you with a profit.",
    },
-   {
-      id: 3,
-      post: "standard",
-      thumb: blogThumb_3,
-      date: "2023/03/25",
-      comment: "14",
-      views: "1,782Viewers",
-      title: "Maximizing Potential discover the Benefits of Our ICO Investment",
-      desc: "Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..",
-      author_avatar: blogAvatar_3,
-      author_name: "Liam James",
-   },
-   {
-      id: 4,
-      post: "standard",
-      thumb: blogThumb_4,
-      date: "2023/03/30",
-      comment: "03",
-      views: "1,732Viewers",
-      title: "Tokenize Your Future explore Our ICO for Game-Changing Investments",
-      desc: "Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..",
-      author_avatar: blogAvatar_4,
-      author_name: "Tom Cruise",
-   },
-   {
-      id: 5,
-      post: "masonry",
-      thumb: blogThumb_2,
-      date: "2023/03/20",
-      comment: "09",
-      views: "1,762Viewers",
-      title: "Invest in the Next Big Thing discover Our ICO Opportunity",
-      desc: "Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..",
-      author_avatar: blogAvatar_2,
-      author_name: "Max Power",
-   },
-   {
-      id: 6,
-      post: "standard",
-      thumb: blogThumb_4,
-      date: "2023/03/30",
-      comment: "03",
-      views: "1,732Viewers",
-      title: "Tokenize Your Future explore Our ICO for Game-Changing Investments",
-      desc: "Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..",
-      author_avatar: blogAvatar_4,
-      author_name: "Tom Cruise",
-   },
-]
+];
 
 export default blog_data;

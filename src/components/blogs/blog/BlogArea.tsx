@@ -1,9 +1,9 @@
 "use client"
 import blog_data from "@/data/BlogData"
 import Image from "next/image"
-import Link from "next/link"
 import BlogSidebar from "../blog-common/BlogSidebar"
 import { useState } from "react"
+import RoadMapArea from "@/components/home/RoadMapArea"
 
 const BlogArea = () => {
 
@@ -60,70 +60,20 @@ const BlogArea = () => {
                               <div className="blog-meta">
                                  <ul className="list-wrap">
                                     <li><i className="far fa-clock"></i>{item.date}</li>
-                                    <li><i className="far fa-comment"></i>{item.comment}</li>
-                                    <li><i className="far fa-eye"></i>{item.views}</li>
                                  </ul>
                               </div>
                               <h2 className="title">{item.title}</h2>
                               <p>{item.desc}</p>
-                              <div className="content-bottom">
-                                 <div className="blog-author">
-                                    <Image src={item.author_avatar} alt="" />{item.author_name}
-                                 </div>
-                                 <div className="read-more-btn">
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     ))}
-
-                     {currentItems.filter(item => item.post === "standard").map((item) => (
-                        <div key={item.id} className="blog-standard-post">
-                           <div className="blog-standard-thumb">
-                              <Image src={item.thumb} alt="" />
-                           </div>
-                           <div className="blog-standard-content">
-                              <div className="blog-meta">
-                                 <ul className="list-wrap">
-                                    <li className="blog-author"><Image src={item.author_avatar} alt="" />{item.author_name}</li>
-                                    <li><i className="far fa-clock"></i>{item.date}</li>
-                                    <li><i className="far fa-comment"></i>{item.comment}</li>
-                                    <li><i className="far fa-eye"></i>{item.views}</li>
-                                 </ul>
-                              </div>
-                              <h2 className="title">{item.title}</h2>
-                              <p>{item.desc}</p>
-                              <div className="read-more-btn">
-                              </div>
                            </div>
                         </div>
                      ))}
                   </div>
-
-                  <nav className="pagination-wrap">
-                     <ul className="list-wrap">
-                        <li>
-                           <a
-                              onClick={() => handlePageClick(currentPage - 1)}
-                              style={{ cursor: 'pointer' }}
-                              className={currentPage === 1 ? 'disabled' : ''}><i className="fas fa-arrow-left"></i>
-                           </a>
-                        </li>
-                        {renderPaginationLinks()}
-                        <li>
-                           <a
-                              onClick={() => handlePageClick(currentPage + 1)}
-                              style={{ cursor: 'pointer' }}
-                              className={currentPage === totalPages ? 'disabled' : ''}
-                           ><i className="fas fa-arrow-right"></i>
-                           </a>
-                        </li>
-                     </ul>
-                  </nav>
                </div>
+               
                <BlogSidebar />
             </div>
          </div>
+         <RoadMapArea/>
       </section >
    )
 }

@@ -150,26 +150,75 @@ const FeatureOne = () => {
                         transform: `translateY(${isActive ? '0px' : '30px'})`
                      }}
                   >
-                     <div 
-                        className="features-item"
-                        style={{
-                           transition: 'transform 0.3s ease-in-out',
-                        }}
-                        onMouseEnter={(e) => {
-                           e.currentTarget.style.transform = 'translateY(-10px)';
-                        }}
-                        onMouseLeave={(e) => {
-                           e.currentTarget.style.transform = 'translateY(0)';
-                        }}
-                     >
-                        <div className="features-content">
-                           <h2 className="title"><Link href="https://www.google.com">{item.title}</Link></h2>
-                           <p>{item.desc}</p>
+                     <Link href="https://www.google.com">
+                        <div 
+                           className="features-item shine-effect"
+                           style={{
+                              transition: 'all 0.4s ease-in-out',
+                           }}
+                        >
+                           <div className="features-content">
+                              <h2 className="title gradient-text">
+                                 {item.title}
+                              </h2>
+                              <p className="gradient-text-light">{item.desc}</p>
+                           </div>
+                           <div className="features-img">
+                              <Image src={item.img} alt="" className="feature-image" />
+                           </div>
+                           <style jsx>{`
+                              .shine-effect {
+                                 background: linear-gradient(135deg, rgba(0, 32, 7, 0.1) 0%, rgba(9, 54, 55, 0.2) 100%);
+                                 backdrop-filter: blur(10px);
+                                 border: 1px solid rgba(255, 255, 255, 0.1);
+                                 box-shadow: 0 8px 32px 0 rgba(3, 65, 0, 0.37);
+                                 transition: all 0.4s ease-in-out;
+                                 position: relative;
+                                 overflow: hidden;
+                                 Duration: 0.5s;
+                              }
+
+                              .shine-effect::before {
+                                 content: '';
+                                 position: absolute;
+                                 top: 0;
+                                 left: -100%;
+                                 width: 100%;
+                                 height: 100%;
+                                 background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                                 transition: 0.5s;
+                              }
+
+                              .shine-effect:hover::before {
+                                 left: 100%;
+                              }
+
+                              .shine-effect:hover {
+                                 transform: translateY(-7px) !important;
+                              }
+
+                              .gradient-text {
+                                 background: linear-gradient(90deg,rgb(255, 255, 255),rgb(9, 55, 11));
+                                 -webkit-background-clip: text;
+                                 -webkit-text-fill-color: transparent;
+                              }
+
+                              .gradient-text-light {
+                                 background: linear-gradient(90deg,rgb(203, 212, 206),rgb(158, 200, 147));
+                                 -webkit-background-clip: text;
+                                 -webkit-text-fill-color: transparent;
+                              }
+
+                              .feature-image {
+                                 transition: transform 0.3s ease;
+                              }
+
+                              .shine-effect:hover .feature-image {
+                                 transform: scale(1.05);
+                              }
+                           `}</style>
                         </div>
-                        <div className="features-img">
-                           <Image src={item.img} alt="" />
-                        </div>
-                     </div>
+                     </Link>
                   </div>
                ))}
             </div>
