@@ -8,7 +8,7 @@ import DownloadArea from "../home/DownloadArea";
 import team_data_UK from "@/data/TeamDataUK";
 import team_data_USA from "@/data/TeamDataUSA";
 import team_data_UAE from "@/data/TeamDataUAE";
-import team_data_ARE from "@/data/TeamDataARE";
+
 
 // Roadmap data and settings
 interface DataTyfe {
@@ -249,7 +249,7 @@ const ContactArea = () => {
                </div>
             </div>
          </section>
-         <section
+         {/* <section
             className="team-area team-bg"
             style={{ backgroundImage: `url(/assets/img/bg/team_bg.png)` }}
          >
@@ -290,7 +290,7 @@ const ContactArea = () => {
                   ))}
                </div>
             </div>
-         </section>
+         </section> */}
          {/* Roadmap / Investment and Insurance Section */}
          <section id="roadMap" className="roadmap-area pt-140">
             <div className="container-fluid p-0">

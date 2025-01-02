@@ -17,11 +17,11 @@ const DownloadArea = () => {
                   <div className="col-lg-6">
                      <div className="download-content">
                         <div className="section-title mb-40">
-                           <h2 className="title">Control Application From Your Mobile</h2>
+                           <h2 className="title">Control Application Coming Soon ....</h2>
                         </div>
                         <div className="download-list">
                            <ul className="list-wrap">
-                              <li><span>1</span>White Paper</li>
+                              <li><span>1</span>Easy Access</li>
                               <li><span>2</span>Privacy & Policy</li>
                            </ul>
                         </div>

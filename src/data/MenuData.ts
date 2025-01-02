@@ -32,8 +32,8 @@ const menu_data: MenuItem[] = [
     {
         id: 4,
         has_dropdown: false,
-        title: "Benefits",
-        link: "/#roadMap",
+        title: "Insurance",
+        link: "/blog",
     },
     {
         id: 5,
