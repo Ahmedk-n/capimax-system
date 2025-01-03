@@ -82,6 +82,7 @@ img,
 .img {
 	max-width: 100%;
 	transition: all 0.3s ease-out 0s;
+    className: "consistent-class-name";
 }
 .f-left {
 	float: left
@@ -2653,11 +2654,6 @@ label {
     color: var(--tg-secondary-color);
     border-color: var(--tg-white);
 }
-.comments-text .avatar-name .date {
-    font-size: 14px;
-    display: block;
-    line-height: 1;
-}
 .comments-text p {
     margin-bottom: 0;
 }
@@ -3350,7 +3346,6 @@ p.form_error {
 
 .license-card {
     background: linear-gradient(135deg, rgba(68, 160, 141, 0.1) 0%, rgba(9, 54, 55, 0.2) 100%);
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     transition: all 0.4s ease-in-out;

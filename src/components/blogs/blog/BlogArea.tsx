@@ -4,6 +4,7 @@ import Image from "next/image"
 import BlogSidebar from "../blog-common/BlogSidebar"
 import { useState } from "react"
 import RoadMapArea from "@/components/home/RoadMapArea"
+import DownloadArea from "@/components/home/DownloadArea"
 
 const BlogArea = () => {
 
@@ -74,6 +75,7 @@ const BlogArea = () => {
             </div>
          </div>
          <RoadMapArea/>
+         <DownloadArea/>
       </section >
    )
 }
