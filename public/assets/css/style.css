@@ -334,7 +334,7 @@ label {
     color: var(--tg-white);
 }
 .btn.btn-two:hover {
-    background: var(--tg-white);
+    background: var(--tg-black);
     color: var (--tg-black);
 }
 .btn.btn-two:hover::after {

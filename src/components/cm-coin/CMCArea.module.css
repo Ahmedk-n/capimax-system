@@ -1,0 +1,10 @@
+.darkButton {
+  background-color: #00031bda; /* Dark background color */
+  color: #fff; /* White text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.darkButton:hover {
+  transform: scale(1.05); /* Slightly bigger on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shining effect */
+}

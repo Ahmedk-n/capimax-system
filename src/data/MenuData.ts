@@ -20,8 +20,8 @@ const menu_data: MenuItem[] = [
     {
         id: 2,
         has_dropdown: false,
-        title: "Our Services",
-        link: "/#investment-plans", // Changed from #feature to be more semantic
+        title: "Investments",
+        link: "https://www.google.com",
     },
     {
         id: 3,
@@ -38,8 +38,8 @@ const menu_data: MenuItem[] = [
     {
         id: 5,
         has_dropdown: false,
-        title: "Investments",
-        link: "https://www.google.com",
+        title: "CM Coin",
+        link: "/cm-coin", // Updated link
     },
     {
         id: 6,
@@ -47,6 +47,7 @@ const menu_data: MenuItem[] = [
         title: "Contact",
         link: "/contact",
     },
+    
 ];
 export default menu_data;
 

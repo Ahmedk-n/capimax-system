@@ -1,5 +1,4 @@
 import Breadcrumb from "../common/Breadcrumb"
-import ContactArea from "./ContactArea"
 
 const Contact = () => {
    return (
