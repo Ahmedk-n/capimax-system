@@ -1,7 +1,4 @@
 "use client"
-import downloadBtnImg_1 from "@/assets/img/images/download_btn01.png"
-import downloadBtnImg_2 from "@/assets/img/images/download_btn02.png"
-import downloadImg_1 from "@/assets/img/images/download_img01.png"
 import downloadImg_2 from "@/assets/img/images/download_img02.png"
 import downloadShape_1 from "@/assets/img/images/download_shape01.png"
 import downloadShape_2 from "@/assets/img/images/download_shape02.png"
