@@ -10,7 +10,6 @@ interface MenuItem {
 }[];
 
 const menu_data: MenuItem[] = [
-    
     {
         id: 1,
         has_dropdown: false,
@@ -31,15 +30,25 @@ const menu_data: MenuItem[] = [
     },
     {
         id: 4,
-        has_dropdown: false,
+        has_dropdown: true,
         title: "Insurance",
         link: "/insurance",
+        sub_menus: [
+            {
+                link: "/insurance/iri",
+                title: "CapiMax IRI"
+            },
+            {
+                link: "/insurance/scp",
+                title: "CapiMax SCP"
+            },
+        ]
     },
     {
         id: 5,
         has_dropdown: false,
         title: "CM Coin",
-        link: "/cm-coin", // Updated link
+        link: "/cm-coin",
     },
     {
         id: 6,
@@ -47,7 +56,7 @@ const menu_data: MenuItem[] = [
         title: "Contact",
         link: "/contact",
     },
-    
 ];
+
 export default menu_data;
 

@@ -23,6 +23,7 @@ const NavMenu = () => {
                     <Link href={menu.link}
                         className={`section-link ${(isMenuItemActive(menu.link) || (menu.sub_menus && menu.sub_menus.some((sub_m: any) => sub_m.link && isSubMenuItemActive(sub_m.link)))) ? "active" : ""}`}>
                         {menu.title}
+                        {menu.has_dropdown && <i className="fas fa-chevron-down" style={{ marginLeft: '5px' }}></i>}
                     </Link>
 
                     {menu.has_dropdown && (
