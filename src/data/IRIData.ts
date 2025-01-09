@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 import blogThumb_1 from "@/assets/img/images/insurance.jpg";
 
+
 interface DataType {
    id: number;
    post: string;
