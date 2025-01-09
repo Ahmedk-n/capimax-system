@@ -15,7 +15,7 @@ const category_data: DataType[] = [
 const BlogCategory = () => {
    return (
       <div className="blog-widget shine-effect">
-         <h4 className="widget-title gradient-text">Insured Investment: Capimax's Unique Advantage</h4>
+         <h4 className="widget-title gradient-text">Insured Investment: Capimax&apos;s Unique Advantage</h4>
          <div className="sidebar-cat-list">
             <ul className="list-wrap">
                {category_data.map((category, index) => (

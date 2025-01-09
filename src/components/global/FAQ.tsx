@@ -22,7 +22,7 @@ const FAQ = () => {
          },
          {
             id: 2,
-            question: "What are Capimax's activities in the UK?",
+            question: "What are Capimax&apos;s activities in the UK?",
             answer:
                "Capimax owns 7 licensed companies in the UK that engage in over 28 different activities, including public investments, wealth management, financial market management, real estate, and investment in precious metals and development.",
             showAnswer: false,
@@ -36,7 +36,7 @@ const FAQ = () => {
          },
          {
             id: 4,
-            question: "What are Capimax's operations in the UAE?",
+            question: "What are Capimax&apos;s operations in the UAE?",
             answer:
                "Capimax owns 5 licensed companies in the UAE involved in diverse activities, including investment management, contracting, and facilities management.",
             showAnswer: false,
@@ -50,7 +50,7 @@ const FAQ = () => {
          },
          {
             id: 6,
-            question: "What is Capimax's vision for the future?",
+            question: "What is Capimax&apos;s vision for the future?",
             answer:
                "Capimax aims to successfully expand its investments through its owned or affiliated companies, adding profits for shareholders, clients, and customers. The group works towards modernization and development, keeping pace with global advancements to offer solutions that match scientific progress and rapid investment growth.",
             showAnswer: false,

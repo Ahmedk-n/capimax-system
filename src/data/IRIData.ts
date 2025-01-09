@@ -19,7 +19,7 @@ const iri_data: DataType[] = [
       thumb: blogThumb_1,
       date: "2025/01/01",
       title: "Investment Risk Insurance for All Types of Investments and Investors",
-      desc: "Capimax Company, in collaboration with major insurance companies worldwide, provides insurance for all types of investments to protect investors' funds, making the investment low-risk. The company has also developed innovative insurance types in collaboration with insurance companies, which allow for coverage of the investor, their life, and their assets, ensuring that their investments are fully insured for themselves, their families, heirs, and businesses.",
+      desc: "Capimax Company, in collaboration with major insurance companies worldwide, provides insurance for all types of investments to protect investors&apos; funds, making the investment low-risk. The company has also developed innovative insurance types in collaboration with insurance companies, which allow for coverage of the investor, their life, and their assets, ensuring that their investments are fully insured for themselves, their families, heirs, and businesses.",
    },
 ];
 

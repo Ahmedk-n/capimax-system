@@ -19,7 +19,7 @@ const blog_data: DataType[] = [
       thumb: blogThumb_1,
       date: "2025/01/01",
       title: "Discover Insured Investments with Capimax",
-      desc: "Capimax's insured investments ensure your principal and profits are protected. Partnering with global leaders like HCC International, we redefine secure investment opportunities for your peace of mind.",
+      desc: "Capimax&apos;s insured investments ensure your principal and profits are protected. Partnering with global leaders like HCC International, we redefine secure investment opportunities for your peace of mind.",
    },
    {
       id: 2,
