@@ -150,7 +150,7 @@ const FeatureOne = () => {
                         transform: `translateY(${isActive ? '0px' : '30px'})`
                      }}
                   >
-                     <Link href="https://www.google.com">
+                     <Link href="https://panel.capimaxinvestment.com/">
                         <div 
                            className="features-item shine-effect"
                            style={{

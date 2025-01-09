@@ -20,7 +20,7 @@ const menu_data: MenuItem[] = [
         id: 2,
         has_dropdown: false,
         title: "Investments",
-        link: "https://www.google.com",
+        link: "https://panel.capimaxinvestment.com/",
     },
     {
         id: 3,
